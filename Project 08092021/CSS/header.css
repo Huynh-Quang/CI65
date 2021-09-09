@@ -1,0 +1,114 @@
+    body {
+        padding: 0;
+    };
+
+    .container-full {
+        max-height: max-content;
+        max-width: 100%;
+    }; 
+    
+    .header {
+        position: fixed;
+        top: 0;
+        border: red 1px solid;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header > .head {
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 8% 0px 8%;
+        background-color: rgb(58, 50, 50);
+    }
+
+    .header > .head > a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 15px;
+        color: white;
+        font-weight: 400;
+        transition: 00.4s;
+    }
+
+    .header > .head > a:hover {
+        transition: 00.4s;
+        color: rgb(59, 211, 39);
+        text-decoration: underline 1px;
+    }
+
+    .header > .head > a > img {
+        display: block;
+        height: 45px;
+        border-radius: 50%;
+    }
+
+    .header > .head > h3 {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: white;
+        margin: 0px 10px 0px 10px;
+    }
+
+    .header > .head > input {
+        width: 50%;
+        height: 40px;
+        padding-left: 20px;
+        margin: 0% 12% 0% 12%;
+        font-size: 15px;
+        border-radius: 8px 8px 8px 8px;
+        font-style: italic;
+    }
+
+    .header > .foot {
+        flex-grow: 1;
+        background-color: rgb(233, 220, 200);
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 8% 0px 8%;
+    }
+
+    .header > .foot > a {
+        text-decoration: none;
+        font-size: 15px;
+        color: black;
+        font-weight: 450;
+        margin: 3% 3% 3% 3%;
+        transition: 000.4s;
+    }
+    
+    .header > .foot > a:hover {
+        transition: 0.4s;
+        color: red;
+    }
+
+    .header > .foot > button {
+        margin-left: 5%;
+        padding: 0px 20px 0px 20px;
+        border-radius: 15px 15px 15px 15px;
+        border: rgba(255, 99, 71, 0.863);
+        height: 40px;
+        background-color:rgba(255, 99, 71, 0.863);
+        font-weight: bold;
+        color: white;
+    }
+
+    .slideshow {
+        margin-top: 0%;
+        max-height: max-content;
+        background-color: burlywood;
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        flex-wrap: wrap;
+        border: 2px solid white;
+    }
+
+    .slideshow > a > img {
+        height: max-content;
+    }

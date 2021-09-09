@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Project</title>
+    <link rel="stylesheet" href="./CSS/reset.css">
+    <link rel="stylesheet" href="./CSS/header.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="./bootstrap-4.5.0-dist/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container-full">
+        <nav class="header">
+            <nav class="head">
+                <a href="" onclick="loadsong()">
+                    <img src="./img/Logo/LogoMP3 new.png">
+                </a>
+                <input type="search" placeholder="Tìm kiếm bài hát ...">
+                <a href="" onclick="">Đăng nhập</a>
+                <h3>/</h3>
+                <a href="" onclick="">Đăng ký</a>
+            </nav>
+            <nav class="foot">
+                <a href="" onclick="">Xếp hạng</a>
+                <a href="" onclick="">Việt Nam</a>
+                <a href="" onclick="">US-UK</a>
+                <a href="" onclick="">Nhạc Hoa</a>
+                <a href="" onclick="">Hàn Quốc</a>
+                <button type="submit">Upload</button>
+            </nav>
+        </nav>
+        <div class="slideshow" id="slideshow"></div>
+    </div>
+    <script type="text/css" src="./bootstrap-4.5.0-dist/js/bootstrap.js"></script>
+    <script type="text/javascript" src="./jquery_321/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('.slideshow').slick({
+                centerMode: true,
+                centerPadding: '60px',
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2500,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            centerMode: true,
+                            centerPadding: '40px',
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+
+        });
+    </script>
+    <script src="./JS/slideshow.js"></script>
+</body>
+
+
+</html>
